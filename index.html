@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊樂場人數與預計等候時間</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .area {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px;
+            flex: 1 1 calc(45% - 30px);
+            max-width: 500px;
+            height: 250px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .stats {
+            font-size: 1.5em;
+            margin: 2px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="margin-left:15px;">遊樂場人數與預計等候時間</h1>
+<div class="container">
+    <div class="area">
+        <h2>區域一</h2>
+        <p class="stats">人數: <span id="area1-count">50</span></p>
+        <p class="stats">預計等候時間: <span id="area1-wait">30 分鐘</span></p>
+    </div>
+    <div class="area">
+        <h2>區域二</h2>
+        <p class="stats">人數: <span id="area2-count">30</span></p>
+        <p class="stats">預計等候時間: <span id="area2-wait">15 分鐘</span></p>
+    </div>
+    <div class="area">
+        <h2>區域三</h2>
+        <p class="stats">人數: <span id="area3-count">70</span></p>
+        <p class="stats">預計等候時間: <span id="area3-wait">45 分鐘</span></p>
+    </div>
+    <div class="area">
+        <h2>區域四</h2>
+        <p class="stats">人數: <span id="area4-count">20</span></p>
+        <p class="stats">預計等候時間: <span id="area4-wait">10 分鐘</span></p>
+    </div>
+</div>
+
+</body>
+</html>
